@@ -16,7 +16,11 @@ let scienceButton = document.querySelector(".science-button");
 
 englishButton.addEventListener("click", function() {
     let englishInput = document.querySelector(".english").value;
-
+if (englishInput === "Mon"){
+englishButton.innerHTML = "Correct"
+}else{
+englishButton.innerHTML = "False"
+}
     // 2. Write an if-else conditional statement.
     //  - Check if the value of the variable englishInput is correct.
     //  - The answer should be "Mon".
@@ -35,7 +39,11 @@ mathButton.addEventListener("click", function() {
     // NOTE: we treat numbers slightly different than strings.
     //  - We need to write 'Number' before the grabbed value. 
     let mathInput = Number(document.querySelector(".math").value);
-
+if (mathInput === 30){
+mathButtonButton.innerHTML = "Correct"
+}else{
+mathButton.innerHTML = "False"
+}
     // 3. Write an if-else conditional statement.
     //  - Check if the value of the variable mathInput is correct.
     //  - The answer should be 30.
@@ -54,7 +62,11 @@ ssButton.addEventListener("click", function() {
     //  - The answer should be "Albany".
     //  - If the user enters the correct answer, use .innerHTML to display the word "You got it!" in the ".ss-message" div. 
     //  - If incorrect, display "Womp, womp. Try again."
-
+if (ssInput === "Albany"){
+ssButton.innerHTML = "Correct"
+}else{
+ssButton.innerHTML = "False"
+}
 
 
 });
@@ -63,6 +75,7 @@ ssButton.addEventListener("click", function() {
 scienceButton.addEventListener("click", function() {
     // 5. Declare a variable that stores the value of the user input in the science section.
     //  - Look at previous lines of code to help you out.
+    let scienceInput = document.querySelector(".science").value;
 
 
     // 6. Write an if-else conditional statement.
@@ -71,7 +84,11 @@ scienceButton.addEventListener("click", function() {
     //  - If the user enters the correct answer, use .innerHTML to display the word "Rockstar!" in the ".science-message" div. 
     //  - If incorrect, display "Sad. Try again."
 
-
+if (scienceInput === "solid"){
+scienceButton.innerHTML = "Correct"
+}else{
+scienceButton.innerHTML = "False"
+}
 
 });
 
